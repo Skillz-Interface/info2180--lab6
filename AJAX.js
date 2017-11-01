@@ -4,15 +4,16 @@ function showDef(){
 				var xhttp = new XMLHttpRequest();
 
 
-				else{
-					var xmlhttp= new XMLHttpRequest();
-					xmlhttp.onreadystatechange = function(){
-						if (this.readyState==4 && this.status == 200){
-							Search(this,Search,query)
+
+				
+				var xmlhttp= new XMLHttpRequest();
+				xmlhttp.onreadystatechange = function(){
+					if (this.readyState==4 && this.status == 200){
+						Search(this,Search,query)
 							
 						}
 					}
-				};
+				
 			
 			xmlhttp.open("GET", "request.php",true);
 			xmlhttp.send();
